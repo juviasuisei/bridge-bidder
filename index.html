@@ -86,10 +86,21 @@
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <p>High Card Points: <span id="hcp">0</span></p>
-              <p>Distribution Points: <span id="dip">0</span></p>
-              <p>Dummy Points: <span id="dup">0</span></p>
-              <p>Balance Hand: <span id="bal">&#x2014;</span></p>
+              <div class="panel-group" id="handacc" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <p class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#handacc" href="#handacc1" aria-expanded="false" aria-controls="handacc1">Show Hand Stats</a>
+                    </p>
+                  </div>
+                  <div id="hadacc1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="handacc1">
+                    <p>High Card Points: <span id="hcp">0</span></p>
+                    <p>Distribution Points: <span id="dip">0</span></p>
+                    <p>Dummy Points: <span id="dup">0</span></p>
+                    <p>Balance Hand: <span id="bal">&#x2014;</span></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

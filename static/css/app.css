@@ -1,6 +1,6 @@
 #nav { position: fixed; bottom: 0; }
-.red, .red focus { color: red; }
-.black, .black focus { color: black; }
+.red, .red .focus, .red .btn:hover { color: red; }
+.black, .black .focus, .black .btn:hover { color: black; }
 .red .btn, .black .btn { width: 50px; margin-bottom: 5px; }
 .red .active, .black .active { background: #EEE; }
 

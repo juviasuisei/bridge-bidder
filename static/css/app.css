@@ -1,4 +1,5 @@
-#nav { position: fixed; bottom: 0; }
+#nav { position: fixed; bottom: 0; height: 50px; }
+.tab-pane { margin-bottom: 50px; }
 .red, .red .focus, .red .btn:hover { color: red; }
 .black, .black .focus, .black .btn:hover { color: black; }
 .card { width: 50px; margin-bottom: 5px; }

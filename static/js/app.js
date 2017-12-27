@@ -6,7 +6,7 @@ function updateCards() {
   h = 0;
   c = 0;
   d = 0;
-  bal = TRUE;
+  bal = true;
   $('.card').each(function(k,v) {
     if($(k).hasClass('active')) {
       rank = v.id.substring(0,1);
@@ -87,7 +87,7 @@ function updateCards() {
     litmus++;
   }
   if(litmus > 1 || s < 2 || h < 2 || d < 2 || c < 2) {
-    balance = FALSE;
+    balance = false;
   }
   $('#hcp').text(hcp);
   $('#dip').text(hcp);

@@ -11,6 +11,8 @@ function updateCards() {
     if($(k).hasClass('active')) {
       rank = v.id.substring(0,1);
       suit = v.id.substring(1);
+      console.log(rank);
+      console.log(suit);
       switch(rank) {
         case 'j':
           hcp++;
@@ -90,7 +92,11 @@ function updateCards() {
     balance = false;
   }
   $('#hcp').text(hcp);
-  $('#dip').text(hcp);
-  $('#dup').text(hcp);
+  $('#dip').text(dip);
+  $('#dup').text(dup);
   $('#bal').text(balance ? 'Y' : 'N');
+  console.log(hcp);
+  console.log(dip);
+  console.log(dup);
+  console.log(balance);
 }

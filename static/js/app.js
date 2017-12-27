@@ -1,3 +1,5 @@
+$('body').on('click', '.card')
+
 function updateCards() {
   hcp = 0;
   dip = 0;

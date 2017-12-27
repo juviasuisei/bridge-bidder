@@ -2,7 +2,7 @@
 .red, .red .focus, .red .btn:hover { color: red; }
 .black, .black .focus, .black .btn:hover { color: black; }
 .card { width: 50px; margin-bottom: 5px; }
-.card .active { background: #EEE; }
+.card.active { background: #EEE; }
 
 @media (max-width: 768px) {
   .nav-justified > li {

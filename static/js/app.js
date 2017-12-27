@@ -1,6 +1,4 @@
-$('body').on('click', '.card')
-
-function updateCards() {
+$('body').on('click', '.card', function() {
   hcp = 0;
   dip = 0;
   dup = 0;
@@ -101,4 +99,4 @@ function updateCards() {
   console.log(dip);
   console.log(dup);
   console.log(balance);
-}
+});

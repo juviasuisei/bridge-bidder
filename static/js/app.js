@@ -89,15 +89,10 @@ $('body').on('click', '.card', function(event) {
     litmus++;
   }
   if(litmus > 1 || s < 2 || h < 2 || d < 2 || c < 2) {
-    balance = false;
+    bal = false;
   }
   $('#hcp').text(hcp);
   $('#dip').text(dip);
   $('#dup').text(dup);
-  $('#bal').text(balance ? 'Y' : 'N');
-  console.log('=-=-=-=');
-  console.log(s);
-  console.log(h);
-  console.log(d);
-  console.log(c);
+  $('#bal').text(bal ? 'Y' : 'N');
 });

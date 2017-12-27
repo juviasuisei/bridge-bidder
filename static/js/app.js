@@ -1,3 +1,6 @@
 function updateCards() {
-  console.log('hi');
+  $('.card').each(function(k,v) {
+    console.log(k);
+    console.log(v);
+  });
 }

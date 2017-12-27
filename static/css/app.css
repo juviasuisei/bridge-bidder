@@ -1,5 +1,6 @@
 #nav { position: fixed; bottom: 0; }
-.btn { font-size: 40px; }
+.red { color: red; }
+.black { color: black; }
 
 @media (max-width: 768px) {
   .nav-justified > li {

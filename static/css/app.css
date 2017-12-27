@@ -1,7 +1,7 @@
 #nav { position: fixed; bottom: 0; }
-.red { color: red; }
-.black { color: black; }
-.red .btn, .black .btn { width: 50px; margin-bottom: 10px; }
+.red, .red focus { color: red; }
+.black, .black focus { color: black; }
+.red .btn, .black .btn { width: 50px; margin-bottom: 5px; }
 .red .active, .black .active { background: #EEE; }
 
 @media (max-width: 768px) {

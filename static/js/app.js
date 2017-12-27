@@ -1,4 +1,6 @@
-$('body').on('click', '.card', function() {
+$('body').on('click', '.card', function(event) {
+  event.stopPropagation(); // prevent default bootstrap behavior
+  $(this).toggleClass('active');
   hcp = 0;
   dip = 0;
   dup = 0;

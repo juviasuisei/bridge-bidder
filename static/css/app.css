@@ -1,6 +1,3 @@
-.pane { margin-top: 50px; }
-#nav { position: fixed; bottom: 0;}
-
 @media (max-width: 768px) {
   .nav-justified > li {
     display: table-cell;

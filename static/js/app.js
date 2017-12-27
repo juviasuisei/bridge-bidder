@@ -8,7 +8,7 @@ function updateCards() {
   d = 0;
   bal = true;
   $('.card').each(function(k,v) {
-    if($(k).hasClass('active')) {
+    if($(v).hasClass('active')) {
       rank = v.id.substring(0,1);
       suit = v.id.substring(1);
       console.log(rank);

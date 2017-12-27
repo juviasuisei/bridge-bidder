@@ -13,8 +13,6 @@ $('body').on('click', '.card', function(event) {
     if($(v).hasClass('active')) {
       rank = v.id.substring(0,1);
       suit = v.id.substring(1);
-      console.log(rank);
-      console.log(suit);
       switch(rank) {
         case 'j':
           hcp++;
@@ -97,8 +95,9 @@ $('body').on('click', '.card', function(event) {
   $('#dip').text(dip);
   $('#dup').text(dup);
   $('#bal').text(balance ? 'Y' : 'N');
-  console.log(hcp);
-  console.log(dip);
-  console.log(dup);
-  console.log(balance);
+  console.log('=-=-=-=');
+  console.log(s);
+  console.log(h);
+  console.log(d);
+  console.log(c);
 });

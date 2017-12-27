@@ -56,33 +56,33 @@ function updateCards() {
   litmus = 0;
   if(s == 0) {
     dup += 5;
-  } elseif(s == 1) {
+  } else if(s == 1) {
     dup += 3;
-  } elseif(s == 2) {
+  } else if(s == 2) {
     dup += 1;
     litmus++;
   }
   if(h == 0) {
     dup += 5;
-  } elseif(h == 1) {
+  } else if(h == 1) {
     dup += 3;
-  } elseif(h == 2) {
+  } else if(h == 2) {
     dup += 1;
     litmus++;
   }
   if(d == 0) {
     dup += 5;
-  } elseif(d == 1) {
+  } else if(d == 1) {
     dup += 3;
-  } elseif(d == 2) {
+  } else if(d == 2) {
     dup += 1;
     litmus++;
   }
   if(c == 0) {
     dup += 5;
-  } elseif(c == 1) {
+  } else if(c == 1) {
     dup += 3;
-  } elseif(c == 2) {
+  } else if(c == 2) {
     dup += 1;
     litmus++;
   }

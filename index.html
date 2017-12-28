@@ -106,18 +106,15 @@
             </div>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="bids">
+        <div role="tabpanel" class="tab-pane fade text-center" id="bids">
           <div class="row">
             <div class="col-xs-12">
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dealer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dealer <span class="caret"></span></button>
-                <ul class="dropdown-menu" aria-labelledby="dealer">
-                  <li><a href="#">North (partner)</a></li>
-                  <li><a href="#">East</a></li>
-                  <li><a href="#">South (you)</a></li>
-                  <li><a href="#">West</a></li>
-                </ul>
-              </div>
+              <select class="form-control" id="dealer" onchange="setDealer();">
+                <option value="n">North (partner)</option>
+                <option value="n">East</option>
+                <option value="n">South (you)</option>
+                <option value="n">West</option>
+              </select>
             </div>
           </div>
         </div>

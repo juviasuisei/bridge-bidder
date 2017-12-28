@@ -21,5 +21,5 @@ $('body').on('click', '#bidacc0 .btn', function(event) {
       dealerString = 'West';
       break;
   }
-  $('#bidacc0 .panel-heading a).text('Dealer: ' + dealerString);
+  $('#bidacc0 .panel-heading a').text('Dealer: ' + dealerString);
 });

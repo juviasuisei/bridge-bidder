@@ -1,4 +1,5 @@
 bids = {
+  '0n' : { 'rank' : 0, 'name' : 'P', 'color' : 'black' },
   '1c' : { 'rank' : 1, 'name' : '1&#x2663;', 'color' : 'black' },
   '1d' : { 'rank' : 2, 'name' : '1&#x2666;', 'color' : 'red' },
   '1h' : { 'rank' : 3, 'name' : '1&#x2665;', 'color' : 'red' },
@@ -88,8 +89,6 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc1">';
-  panel += '<button id="bid01p" type="button" class="bid btn btn-muted black" data-toggle="button" aria-pressed="false" autocomplete="off">P</button><br />';
-  i = 0
   $.each(bids, function(k,v) {
     panel += '<button id="bid01' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
     if(k.substr(1) == 'n') {
@@ -107,7 +106,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   $(this).parent().children().removeClass('active');
   $(this).toggleClass('active');
   newbid = $(this).attr('id').substr(5);
-  bid = 'p' == newbid ? bid : newbid;
+  bid = 'p' == newbid ? (undefined != bid ? bid : '0n') : newbid;
   bidno = parseInt($(this).parent().attr('id').substr(6));
   i = 50;
   while(i > bidno) {
@@ -125,7 +124,6 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc' + newbidno + '" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc' + newbidno + '">';
-  panel += '<button id="bid' + (newbidno < 10 ? '0' + newbidno : newbidno) + 'p" type="button" class="bid btn btn-muted black" data-toggle="button" aria-pressed="false" autocomplete="off">P</button><br />';
   bidrank = bids[bid].rank;
   $.each(bids, function(k,v) {
     if(v.rank > bidrank) {

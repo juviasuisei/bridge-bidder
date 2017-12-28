@@ -1,4 +1,5 @@
 $('body').on('click', '#bidacc0 .btn', function(event) {
+  console.log('made it');
   event.stopPropagation(); // prevent default bootstrap behavior
   $(this).toggleClass('active');
   dealer = false;

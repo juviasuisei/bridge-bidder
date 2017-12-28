@@ -107,14 +107,14 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   $(this).parent().children().removeClass('active');
   $(this).toggleClass('active');
   bid = $(this).attr('id').substr(5);
-  bidno = $(this).parent().attr('id').substr(6);
+  bidno = parseInt($(this).parent().attr('id').substr(6));
   i = 50;
   while(i < bidno) {
     $('#bidacc' + i).parent().remove();
     i--;
   }
   $('#bid' + bidno + 'a').text($(this).text()).removeClass('black red').addClass(bids[bid].color);
-  newbidno = parseInt(bidno) + 1;
+  newbidno = bidno + 1;
   bidder = getBidder(bidder);
   panel = '';
   panel += '<div class="panel panel-default bids">';

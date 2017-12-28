@@ -4,7 +4,7 @@
 .black, .black .focus, .black .btn:hover { color: black; }
 .card, .bid { width: 50px; margin-bottom: 5px; }
 .red .active { background: pink; }
-.black .active { background: grey; }
+.black .active { background: lightgrey; }
 
 @media (max-width: 768px) {
   .nav-justified > li {

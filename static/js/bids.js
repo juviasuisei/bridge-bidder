@@ -109,7 +109,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   bid = $(this).attr('id').substr(5);
   bidno = parseInt($(this).parent().attr('id').substr(6));
   i = 50;
-  while(i < bidno) {
+  while(i > bidno) {
     $('#bidacc' + i).parent().remove();
     i--;
   }

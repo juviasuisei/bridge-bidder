@@ -74,7 +74,7 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   $.each(bids, function(k,v) {
     panel += '<button id="bid1' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
     i++;
-    if(0 = i % 5) {
+    if(0 == i % 5) {
       panel += '<br />';
     }
   });

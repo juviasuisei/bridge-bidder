@@ -70,10 +70,10 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in black" role="tabpanel" aria-labelledby="bidacc1">';
-  panel += '<button id="bid1p" type="button" class="bid btn btn-muted" data-toggle="button" aria-pressed="false" autocomplete="off">P</button><br />';
+  panel += '<button id="bid01p" type="button" class="bid btn btn-muted" data-toggle="button" aria-pressed="false" autocomplete="off">P</button><br />';
   i = 0
   $.each(bids, function(k,v) {
-    panel += '<button id="bid1' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
+    panel += '<button id="bid01' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
     i++;
     if(0 == i % 5) {
       panel += '<br />';
@@ -85,7 +85,16 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   $('#bidacc0').collapse('hide');
 });
 
-$('body').on('click', '#bidacc .bids', function(event) {
+$('body').on('click', '#bidacc .bids .bid', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
-  console.log('hi');
+  $(this).parent().children().removeClass('active');
+  $(this).toggleClass('active');
+  bid = $(this).attr('id').substr(5);
+  bidno = $(this).parent().attr('id').substr(6);
+  i = 10;
+  while(i < bidno) {
+    $('#bidacc' + i).parent().remove();
+    i--;
+  }
+  $('#bid' + bidno + 'a').text($(this).text()).removeClass('black red').addClass(bids[bid].color);
 });

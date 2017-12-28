@@ -1,7 +1,7 @@
 $('body').on('click', '.card', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
   if(13 <= $('.card.active').length) {
-    if(true == $(this).hasClass('active') {
+    if(true == $(this).hasClass('active')) {
       $(this).toggleClass('active');
     }
   } else {

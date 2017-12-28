@@ -1,9 +1,10 @@
 $('body').on('click', '#bidacc0 .bid', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
+  $('#bidacc0 .bid').removeClass('active');
   $(this).toggleClass('active');
   dealer = false;
   dealerString = '';
-  switch($('#bidacc0 .active input').id) {
+  switch($('#bidacc0 .active').attr('id')) {
     case 'dealern':
       dealer = 'n';
       dealerString = 'North (Partner)';
@@ -21,5 +22,5 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
       dealerString = 'West';
       break;
   }
-  $('#bidacc0 .panel-heading a').text('Dealer: ' + dealerString);
+  $('#bidacc0h a').text('Dealer: ' + dealerString);
 });

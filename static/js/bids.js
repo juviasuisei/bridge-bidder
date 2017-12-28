@@ -85,7 +85,7 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '<div class="panel panel-default bids">';
   panel += '<div class="panel-heading" role="tab" id="bidacc1h">';
   panel += '<p class="panel-title">';
-  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (' + bidder + '): <span id="bid1a">____</span></a>';
+  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (<span class="bid1b">' + bidder + '</span>): <span id="bid1a">____</span></a>';
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc1">';
@@ -115,12 +115,12 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   }
   $('#bid' + bidno + 'a').text($(this).text()).removeClass('black red').addClass(bids[bid].color);
   newbidno = bidno + 1;
-  bidder = getBidder(bidder);
+  bidder = getBidder($('#bid' + bidno + 'b').text());
   panel = '';
   panel += '<div class="panel panel-default bids">';
   panel += '<div class="panel-heading" role="tab" id="bidacc' + newbidno + 'h">';
   panel += '<p class="panel-title">';
-  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc' + newbidno + '" aria-expanded="true" aria-controls="bidacc' + newbidno + '">Bid ' + newbidno + ' (' + bidder + '): <span id="bid' + newbidno + 'a">____</span></a>';
+  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc' + newbidno + '" aria-expanded="true" aria-controls="bidacc' + newbidno + '">Bid ' + newbidno + ' (<span class="bid' + newbidno + 'b">' + bidder + '</span>): <span id="bid' + newbidno + 'a">____</span></a>';
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc' + newbidno + '" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc' + newbidno + '">';

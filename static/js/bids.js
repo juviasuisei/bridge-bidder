@@ -1,5 +1,4 @@
 bids = {
-  'pass' : { 'rank' : 0, 'name' : '[Pass]', 'color' : 'black' },
   '1c' : { 'rank' : 1, 'name' : '1&#x2660;', 'color' : 'black' },
   '1d' : { 'rank' : 2, 'name' : '1&#x2665;', 'color' : 'red' },
   '1h' : { 'rank' : 3, 'name' : '1&#x2666;', 'color' : 'red' },
@@ -66,12 +65,18 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '<div class="panel panel-default">';
   panel += '<div class="panel-heading" role="tab" id="bidacc1h">';
   panel += '<p class="panel-title">';
-  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (' + dealer.toUpperCase() + '): <span id="bid1a">[Enter]</span></a>';
+  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (' + dealer.toUpperCase() + '): <span id="bid1a">____</span></a>';
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in black" role="tabpanel" aria-labelledby="bidacc1">';
+  panel += '<button id="bid1p" type="button" class="bid btn btn-muted black" data-toggle="button" aria-pressed="false" autocomplete="off">Pass</button><br />';
+  i = 0
   $.each(bids, function(k,v) {
     panel += '<button id="bid1' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
+    i++;
+    if(0 = i % 5) {
+      panel += '<br />';
+    }
   });
   panel += '</div>';
   panel += '</div>';

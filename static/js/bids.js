@@ -84,3 +84,8 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   $('#bidacc').prepend(panel);
   $('#bidacc0').collapse('hide');
 });
+
+$('body').on('click', '#bidacc .bids', function(event) {
+  event.stopPropagation(); // prevent default bootstrap behavior
+  console.log('hi');
+});

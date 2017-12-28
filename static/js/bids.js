@@ -106,7 +106,8 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
   $(this).parent().children().removeClass('active');
   $(this).toggleClass('active');
-  bid = $(this).attr('id').substr(5);
+  newbid = $(this).attr('id').substr(5);
+  bid = 'p' == newbid ? bid : newbid;
   bidno = parseInt($(this).parent().attr('id').substr(6));
   i = 50;
   while(i > bidno) {

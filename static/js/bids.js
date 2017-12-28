@@ -126,7 +126,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   panel += '<div id="bidacc' + newbidno + '" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc' + newbidno + '">';
   bidrank = bids[bid].rank;
   $.each(bids, function(k,v) {
-    if(v.rank > bidrank) {
+    if(v.rank > bidrank || 0 == bidrank) {
       panel += '<button id="bid' + (newbidno < 10 ? '0' + newbidno : newbidno) + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
       if(k.substr(1) == 'n') {
         panel += '<br />';

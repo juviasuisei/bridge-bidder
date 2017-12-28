@@ -70,11 +70,11 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in black" role="tabpanel" aria-labelledby="bidacc1">';
-  $(bids).each(function(k,v) {
+  $.each(bids, function(k,v) {
     panel += '<button id="bid1' + k + '" type="button" class="bid btn btn-muted ' + v.color + '" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
   });
   panel += '</div>';
   panel += '</div>';
   $('#bidacc').prepend(panel);
-  $('#bidacc1').collapse('show');
+  $('#bidacc0').collapse('hide');
 });

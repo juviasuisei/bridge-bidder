@@ -85,7 +85,7 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '<div class="panel panel-default bids">';
   panel += '<div class="panel-heading" role="tab" id="bidacc1h">';
   panel += '<p class="panel-title">';
-  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (<span class="bid1b">' + bidder + '</span>): <span id="bid1a">____</span></a>';
+  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc1" aria-expanded="true" aria-controls="bidacc1">Bid 1 (<span id="bid1b">' + bidder + '</span>): <span id="bid1a">____</span></a>';
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc1">';
@@ -120,7 +120,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   panel += '<div class="panel panel-default bids">';
   panel += '<div class="panel-heading" role="tab" id="bidacc' + newbidno + 'h">';
   panel += '<p class="panel-title">';
-  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc' + newbidno + '" aria-expanded="true" aria-controls="bidacc' + newbidno + '">Bid ' + newbidno + ' (<span class="bid' + newbidno + 'b">' + bidder + '</span>): <span id="bid' + newbidno + 'a">____</span></a>';
+  panel += '<a role="button" data-toggle="collapse" data-parent="#bidacc" href="#bidacc' + newbidno + '" aria-expanded="true" aria-controls="bidacc' + newbidno + '">Bid ' + newbidno + ' (<span id="bid' + newbidno + 'b">' + bidder + '</span>): <span id="bid' + newbidno + 'a">____</span></a>';
   panel += '</p>';
   panel += '</div>';
   panel += '<div id="bidacc' + newbidno + '" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="bidacc' + newbidno + '">';

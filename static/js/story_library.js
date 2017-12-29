@@ -1,0 +1,2 @@
+var story_library = {
+}

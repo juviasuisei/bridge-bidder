@@ -137,4 +137,5 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   panel += '</div>';
   $('#bidacc').prepend(panel);
   $('#bidacc' + bidno).collapse('hide');
+  tellStory();
 });

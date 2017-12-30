@@ -10,14 +10,14 @@ sets = {
 }
 
 function settleScore() {
+  vuln = $('#vuln').hasClass('active');
+  dub = $('#double').hasClass('active');
+  redub = $('#redouble').hasClass('active');
   score_bid = bids[bid];
   score_rank = bid.substr(0,1);
   score_suit = bid.substr(1);
   score_value = ('c' == score_suit || 'd' == score_suit) ? 20 : 30;
   below = ((score_rank * score_value) + ('n' == score_suit ? 10 : 0)) * (dub ? 2 : (redub ? 4 : 1));
-  vuln = $('#vuln').hasClass('active');
-  dub = $('#double').hasClass('active');
-  redub = $('#redouble').hasClass('active');
   above = (dub ? (vuln ? 200 : 100) : (redub ? (vuln ? 400 : 200) : score_value));
   list = '';
   list += '<li><strong>Current Bid:</strong> <span class="' + score_bid.color + '">' + score_bid.name + '</span></li>';

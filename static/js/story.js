@@ -88,6 +88,75 @@ function tellStory() {
             }
           }
         });
+      } else if('1h' == openbid || '1s' == openbid) {
+        $.each(story_library.responses.major, function(k,v) {
+          if(k == loop_bid_key) {
+            if(0 == v.alt) {
+              biddata = v;
+            } else {
+              $.each(v.alt, function(k2, v2) {
+                if(k2 == openbid) {
+                  biddata = v2;
+                  return false;
+                } else if('xx' == k2) {
+                  biddata = v2;
+                  return false;
+                }
+              });
+            }
+          }
+        });
+      } else if('1n' == openbid || '2n' == openbid) {
+        $.each(story_library.responses.nt, function(k,v) {
+          if(k == loop_bid_key) {
+            if(0 == v.alt) {
+              biddata = v;
+            } else {
+              $.each(v.alt, function(k2, v2) {
+                if(k2 == openbid) {
+                  biddata = v2;
+                  return false;
+                } else if('xx' == k2) {
+                  biddata = v2;
+                  return false;
+                }
+              });
+            }
+          }
+        });
+      }
+    } else if(loop_bidder == opener && true == rebid) {
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Opener\'s Rebid</li>';
+      if(openbid.substr(1) == respondbid.substr(1) {
+        $.each(story_library.orebids.raise, function(k,v) {
+          if(k == loop_bid_key) {
+            if(0 == v.alt) {
+              biddata = v;
+            } else {
+              $.each(v.alt, function(k2, v2) {
+                if(k2 == respondbid || 'xx' == k2) {
+                  if(0 == v2.alt) {
+                    biddata = v2;
+                    return false;
+                  } else if(-1 == v2.alt) {
+                    biddata = v2;
+                    return false;
+                  } else {
+                    $.each(v2.alt, function(k3, v3) {
+                      if(k3 == openbid) {
+                        biddata = v3;
+                        return false;
+                      } else if('xx' == k3) {
+                        biddata = v3;
+                        return false;
+                      }
+                    });
+                  }
+                }
+              });
+            }
+          }
+        });
       }
     }
     if(false != biddata && biddata.alt != -1 && biddata.type != -1) {

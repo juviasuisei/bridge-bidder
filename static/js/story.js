@@ -73,7 +73,7 @@ function tellStory() {
     panel += '<ul class="list-group">';
     biddata = false;
     if(loop_bidder == opener && false == rebid) {
-      pane += '<li class="list-group-item">Designation: Opening Bid</li>';
+      panel += '<li class="list-group-item">Designation: Opening Bid</li>';
       $.each(story_library.opens, function(k,v) {
         if(k == loop_bid_key) {
           biddata = v;
@@ -81,15 +81,15 @@ function tellStory() {
       });
     }
     if(false != biddata) {
-      pane += '<li class="list-group-item">Bid Type: ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
-      pane += '<li class="list-group-item">HCP + Distribution Points: ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Indeterminate') + '</li>';
-      pane += '<li class="list-group-item">HCP + Dummy Points: ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Indeterminate') + '</li>';
-      pane += '<li class="list-group-item">Balanced Hand: ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Indeterminate') + '</li>';
-      pane += '<li class="list-group-item">&#x2260;: ' + (-1 != biddata.s ? (biddata.s + (biddata.sg ? ' Good' : '')) : 'Indeterminate') + '</li>';
-      pane += '<li class="list-group-item"><span class="red">&#x2265;: ' + (-1 != biddata.h ? (biddata.h + (biddata.hg ? ' Good' : '')) : 'Indeterminate') + '</span></li>';
-      pane += '<li class="list-group-item"><span class="red">&#x2266;: ' + (-1 != biddata.d ? (biddata.d + (biddata.dg ? ' Good' : '')) : 'Indeterminate') + '</span></li>';
-      pane += '<li class="list-group-item">&#x2260;: ' + (-1 != biddata.c ? (biddata.c + (biddata.cg ? ' Good' : '')) : 'Indeterminate') + '</li>';
-      pane += '<li class="list-group-item">Designation: ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
+      panel += '<li class="list-group-item">Bid Type: ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
+      panel += '<li class="list-group-item">HCP + Distribution Points: ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Indeterminate') + '</li>';
+      panel += '<li class="list-group-item">HCP + Dummy Points: ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Indeterminate') + '</li>';
+      panel += '<li class="list-group-item">Balanced Hand: ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Indeterminate') + '</li>';
+      panel += '<li class="list-group-item">&#x2260;: ' + (-1 != biddata.s ? (biddata.s + (biddata.sg ? ' Good' : '')) : 'Indeterminate') + '</li>';
+      panel += '<li class="list-group-item"><span class="red">&#x2265;: ' + (-1 != biddata.h ? (biddata.h + (biddata.hg ? ' Good' : '')) : 'Indeterminate') + '</span></li>';
+      panel += '<li class="list-group-item"><span class="red">&#x2266;: ' + (-1 != biddata.d ? (biddata.d + (biddata.dg ? ' Good' : '')) : 'Indeterminate') + '</span></li>';
+      panel += '<li class="list-group-item">&#x2260;: ' + (-1 != biddata.c ? (biddata.c + (biddata.cg ? ' Good' : '')) : 'Indeterminate') + '</li>';
+      panel += '<li class="list-group-item">Designation: ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
     }
     panel += '</ul>';
     panel += '</div>';

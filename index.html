@@ -140,8 +140,11 @@
           <div class="row">
             <div class="col-xs-12">
               <button id="vuln" type="button" class="btn btn-muted vars" data-toggle="button" aria-pressed="false" autocomplete="off">Vulnerable</button>
-              <button id="double" type="button" class="btn btn-muted vars" data-toggle="button" aria-pressed="false" autocomplete="off">Double</button>
-              <button id="redouble" type="button" class="btn btn-muted vars" data-toggle="button" aria-pressed="false" autocomplete="off">Redouble</button>
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-muted vars active"><input type="radio" name="dares" id="chicken" autocomplete="off" checked> Friendly</label>
+                <label class="btn btn-muted vars"><input type="radio" name="dares" id="double" autocomplete="off"> Double</label>
+                <label class="btn btn-muted vars"><input type="radio" name="dares" id="redouble" autocomplete="off"> Redouble</label>
+              </div>
               <ul class="list-group" id="scoreexpl">
               </ul>
             </div>

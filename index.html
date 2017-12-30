@@ -21,7 +21,7 @@
   <body>
     <div class="container-fluid">
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="hand">
+        <div role="tabpanel" class="tab-pane fade" id="hand">
           <div class="row">
             <div class="col-xs-3 black">
               <button id="2s" type="button" class="card btn btn-muted" data-toggle="button" aria-pressed="false" autocomplete="off">2&#x2660;</button>
@@ -106,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade text-center" id="bids">
+        <div role="tabpanel" class="tab-pane fade text-center in active" id="bids">
           <div class="row">
             <div class="col-xs-12">
               <div class="panel-group" id="bidacc" role="tablist" aria-multiselectable="true">
@@ -140,9 +140,9 @@
       <div class="row" id="nav">
         <div class="col-xs-12" role="navigation">
           <ul class="nav nav-pills">
-            <li role="presentation"><a href="#bids" aria-controls="bids" role="tab" data-toggle="tab">Bids</a></li>
+            <li role="presentation" class="active"><a href="#bids" aria-controls="bids" role="tab" data-toggle="tab">Bids</a></li>
             <li role="presentation"><a href="#story" aria-controls="story" role="tab" data-toggle="tab">Explanation</a></li>
-            <li role="presentation" class="active"><a href="#hand" aria-controls="hand" role="tab" data-toggle="tab">Hand</a></li>
+            <li role="presentation"><a href="#hand" aria-controls="hand" role="tab" data-toggle="tab">Hand</a></li>
           </ul>
         </div>
       </div>

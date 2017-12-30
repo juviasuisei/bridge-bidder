@@ -158,6 +158,37 @@ function tellStory() {
             }
           }
         });
+      } else {
+        $.each(story_library.orebids.new, function(k,v) {
+          if(k == loop_bid_key) {
+            if(0 == v.alt || -1 == v.alt) {
+              biddata = v;
+              return false;
+            } else if(-1 != v.alt) {
+              $.each(v.alt, function(k2, v2) {
+                if(k2 == respondbid || 'xx' == k2) {
+                  if(0 == v2.alt) {
+                    biddata = v2;
+                    return false;
+                  } else if(-1 == v2.alt) {
+                    biddata = v2;
+                    return false;
+                  } else {
+                    $.each(v2.alt, function(k3, v3) {
+                      if(k3 == openbid) {
+                        biddata = v3;
+                        return false;
+                      } else if('xx' == k3) {
+                        biddata = v3;
+                        return false;
+                      }
+                    });
+                  }
+                }
+              });
+            }
+          }
+        });
       }
     }
     if(false != biddata && biddata.alt != -1 && biddata.type != -1) {

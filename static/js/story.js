@@ -73,7 +73,9 @@ function tellStory() {
       if('1c' == openbid || '1d' == openbid) {
         $.each(story_library.responses.minor, function(k,v) {
           if(k == loop_bid_key) {
-            if(0 != v.alt) {
+            if(0 == v.alt) {
+              biddata = v;
+            } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
                   biddata = v2;
@@ -83,8 +85,6 @@ function tellStory() {
                   return false;
                 }
               });
-            } else {
-              biddata = v;
             }
           }
         });

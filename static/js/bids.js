@@ -113,7 +113,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
     $('#bidacc' + i).parent().remove();
     i--;
   }
-  $('#bid' + bidno + 'a').text($(this).text()).removeClass('black red').addClass(bids[bid].color);
+  $('#bid' + bidno + 'a').text($(this).text()).removeClass('black red').addClass(bids[newbid].color);
   newbidno = bidno + 1;
   bidder = getBidder($('#bid' + bidno + 'b').text());
   panel = '';

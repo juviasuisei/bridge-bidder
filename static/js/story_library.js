@@ -954,7 +954,7 @@ var story_library = {
       '7s' : { 'alt' : -1 },
       '7n' : { 'alt' : -1 }
   },
-  'adva' : {
+  'advances' : {
       '0n' : { 
         'alt' : {
           '1d' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '=< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },

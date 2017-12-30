@@ -452,8 +452,9 @@ var story_library = {
             'alt' : {
               '1c' : { 'hcpdi' : 'between 18 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : '3+', 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Rebid' },
               'xx' : { 'alt' : -1 }
-          },
-          'xx' : { 'alt' : -1 }
+            },
+            'xx' : { 'alt' : -1 }
+          }
         }
       },
       '5d' : { 
@@ -462,8 +463,9 @@ var story_library = {
             'alt' : {
               '1d' : { 'hcpdi' : 'between 18 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '3+', 'dg' : -1, 'c' : '< 3', 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' :  'Jump Rebid' },
               'xx' : { 'alt' : -1 }
-          },
-          'xx' : { 'alt' : -1 }
+            },
+            'xx' : { 'alt' : -1 }
+          }
         }
       },
       '5h' : { 'alt' : -1 },
@@ -517,8 +519,7 @@ var story_library = {
               '1h' : { 'hcpdi' : 'between 13 &#x0026; 14', 'hcpdu' : -1, 'bal' : 1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
               'xx' : { 'alt' : -1 }
             }
-          },
-          'xx' : { 'alt' : -1 }
+          }
         }
       },
       '2c' : {
@@ -606,8 +607,7 @@ var story_library = {
               '1s' : { 'hcpdi' : 'between 18 &#x0026; 19', 'hcpdu' : -1, 'bal' : 1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
               'xx' : { 'alt' : -1 }
             }
-          },
-          'xx' : { 'alt' : -1 }
+          }
         }
       },
       '3c' : {
@@ -652,6 +652,7 @@ var story_library = {
               '1s' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : 1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
               'xx' : { 'alt' : -1 }
             }
+          }
         }
       },
       '3h' : { 
@@ -888,6 +889,8 @@ var story_library = {
               '1h' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
               '1s' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
               'xx' : { 'alt' : -1 }
+            }
+          }
         }
       },
       '5h' : { 'alt' : -1 },
@@ -897,7 +900,7 @@ var story_library = {
       '6d' : { 'alt' : -1 },
       '6h' : { 'alt' : -1 },
       '6s' : { 'alt' : -1 },
-      '6n' : { 'alt' : -1 }
+      '6n' : { 'alt' : -1 },
       '7c' : { 'alt' : -1 },
       '7d' : { 'alt' : -1 },
       '7h' : { 'alt' : -1 },

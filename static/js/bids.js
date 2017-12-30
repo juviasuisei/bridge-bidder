@@ -106,7 +106,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   $(this).parent().children().removeClass('active');
   $(this).toggleClass('active');
   newbid = $(this).attr('id').substr(5);
-  if(undefined == bid) {
+  if(typeof bid == 'undefined') {
     bid = newbid;
   } else if('0n' != newbid) {
     bid = newbid;

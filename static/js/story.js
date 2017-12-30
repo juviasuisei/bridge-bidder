@@ -37,15 +37,10 @@ function tellStory() {
       winning_bid = loop_bid;
       winning_bid_key = $('#bid' + i + 'a').data('key');
     }
-    if((false == opener || false == overcaller) && '0n' != loop_bid_key) {
-      if(false == opener) {
-        opener = loop_bidder;
-        openbid = loop_bid_key;
-        responder = getPartner(loop_bidder);
-      } else if(false == overcaller) {
-        overcaller = loop_bidder;
-        advancer = getPartner(loop_bidder);
-      }
+    if(false == opener && '0n' != loop_bid_key) {
+      opener = loop_bidder;
+      openbid = loop_bid_key;
+      responder = getPartner(loop_bidder);
     } else if(responder == loop_bidder) {
       respondbid = loop_bid_key;
     } else if(opener == loop_bidder || overcaller == loop_bidder) {

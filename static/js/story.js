@@ -32,7 +32,7 @@ function tellStory() {
     loop_bid = $('#bid' + i + 'a').text();
     loop_bid_key = $('#bid' + i + 'a').data('key');
     loop_bidder = $('#bid' + i + 'b').text();
-    if(false == winning_bid || bids[findBidByName(loop_bid_key)].rank > bids[findBidByName(winning_bid_key)]) {
+    if(false == winning_bid || bids[loop_bid_key].rank > bids[winning_bid_key]) {
       winning_bid = loop_bid;
       winning_bid_key = $('#bid' + i + 'a').data('key');
     }

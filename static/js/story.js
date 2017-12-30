@@ -73,7 +73,7 @@ function tellStory() {
     panel += '<ul class="list-group">';
     biddata = false;
     if(loop_bidder == opener && false == rebid) {
-      panel += '<li class="list-group-item">Designation: Opening Bid</li>';
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Opening Bid</li>';
       $.each(story_library.opens, function(k,v) {
         if(k == loop_bid_key) {
           biddata = v;

@@ -82,7 +82,7 @@ var story_library = {
       '4d' : { 'alt' : -1 },
       '4h' : { 'alt' : -1 },
       '4s' : { 'alt' : -1 },
-      '4n' : { 'hcpdi' : '20+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Blackwood;' },
+      '4n' : { 'hcpdi' : '20+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Blackwood' },
       '5c' : { 'alt' : -1 },
       '5d' : { 'alt' : -1 },
       '5h' : { 'alt' : -1 },
@@ -178,7 +178,7 @@ var story_library = {
       '4d' : { 'alt' : -1 },
       '4h' : { 'alt' : -1 },
       '4s' : { 'alt' : -1 },
-      '4n' : { 'hcpdi' : '20+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Blackwood;' },
+      '4n' : { 'hcpdi' : '20+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Blackwood' },
       '5c' : { 'alt' : -1 },
       '5d' : { 'alt' : -1 },
       '5h' : { 'alt' : -1 },
@@ -200,7 +200,7 @@ var story_library = {
         'alt' : {
           '1n' : { 'hcpdi' : '< 7', 'hcpdu' : '< 7', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           '2n' : { 'hcpdi' : '< 3', 'hcpdu' : '< 3', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
-          'xx' : { 'alt' : -1 }
+          'xx' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
         }
       },
       '1c' : { 'alt' : -1 },
@@ -335,7 +335,7 @@ var story_library = {
               '1h' : { 'hcpdi' : 'between 13 &#x0026; 14', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
               '1s' : { 'hcpdi' : 'between 13 &#x0026; 14', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
               '1n' : { 'hcpdi' : 'between 15 &#x0026; 17', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
-              'xx' : { 'alt' : -1 }
+              'xx' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
             }
           }
         }
@@ -933,10 +933,10 @@ var story_library = {
       '3h' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : '7+', 'hg' : 1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
       '3s' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : '7+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
       '3n' : { 'alt' : -1 },
-      '3c' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '8+', 'cg' : 1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
-      '3d' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '8+', 'dg' : 1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
-      '3h' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : '8+', 'hg' : 1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
-      '3s' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : '8+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
+      '4c' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '8+', 'cg' : 1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
+      '4d' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '8+', 'dg' : 1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
+      '4h' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : -1, 'sg' : -1, 'h' : '8+', 'hg' : 1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
+      '4s' : { 'hcpdi' : '< 7', 'hcpdu' : -1, 'bal' : 0, 's' : '8+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Pre&#x00EB;mptive Jump Overcall' },
       '4n' : { 'alt' : -1 },
       '5c' : { 'alt' : -1 },
       '5d' : { 'alt' : -1 },
@@ -955,29 +955,147 @@ var story_library = {
       '7n' : { 'alt' : -1 }
   },
   'adva' : {
-      '0n' : { 'alt' : -1 },
+      '0n' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '=< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          '1h' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '=< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          '1s' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : '=< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+        }
+      },
       '1c' : { 'alt' : -1 },
       '1d' : { 'alt' : -1 },
-      '1h' : { 'alt' : -1 },
-      '1s' : { 'alt' : -1 },
-      '1n' : { 'alt' : -1 },
-      '2c' : { 'alt' : -1 },
-      '2d' : { 'alt' : -1 },
-      '2h' : { 'alt' : -1 },
-      '2s' : { 'alt' : -1 },
-      '2n' : { 'alt' : -1 },
-      '3c' : { 'alt' : -1 },
-      '3d' : { 'alt' : -1 },
-      '3h' : { 'alt' : -1 },
-      '3s' : { 'alt' : -1 },
-      '3n' : { 'alt' : -1 },
-      '4c' : { 'alt' : -1 },
-      '4d' : { 'alt' : -1 },
-      '4h' : { 'alt' : -1 },
-      '4s' : { 'alt' : -1 },
+      '1h' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : 1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '1s' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
+          '1h' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : 1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '1n' : { 
+        'alt' : {
+          'xx' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+        }
+      },
+      '2c' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : '6+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '6+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '6+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '2d' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 3, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : '6+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '6+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '2h' : { 
+        'alt' : {
+          '1h' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 3, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '2c' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '< 3', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '2d' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '2s' : { 
+        'alt' : {
+          '1s' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : 3, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          '2c' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '< 3', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '2d' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          '2h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '2n' : { 
+        'alt' : {
+          '1n' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '3c' : { 
+        'alt' : {
+          '2c' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '3d' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2d' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 3, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '3h' : { 
+        'alt' : {
+          '1h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 4, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2h' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 3, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '3s' : { 
+        'alt' : {
+          '1s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : 4, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2s' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : 3, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '3n' : { 
+        'alt' : {
+          '1n' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '4c' : { 
+        'alt' : {
+          '2c' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 4, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '4d' : { 
+        'alt' : {
+          '2d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '4h' : { 
+        'alt' : {
+          '1h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 4, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '4s' : { 
+        'alt' : {
+          '1s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : 4, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
       '4n' : { 'alt' : -1 },
-      '5c' : { 'alt' : -1 },
-      '5d' : { 'alt' : -1 },
+      '5c' : { 
+        'alt' : {
+          '2c' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
+      '5d' : { 
+        'alt' : {
+          '1d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          '2d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+          'xx' : { 'alt' : -1 }
+        }
+      },
       '5h' : { 'alt' : -1 },
       '5s' : { 'alt' : -1 },
       '5n' : { 'alt' : -1 },

@@ -1,4 +1,5 @@
 function tellStory() {
+  $('#storyacc').empty();
   bid_count = $('.bids').length
   while(bid_count > 0) {
     panel = '';

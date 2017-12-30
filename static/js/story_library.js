@@ -424,24 +424,32 @@ var story_library = {
       '4h' : { 
         'alt' : {
           '3h' : {
-            '1h' : { 'hcpdi' : 'between 15 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
-            'xx' : { 'alt' : -1 }
+            'alt' : {
+              '1h' : { 'hcpdi' : 'between 15 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+              'xx' : { 'alt' : -1 }
+            }
           },
           'xx' : {
-            '1h' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
-            'xx' : { 'alt' : -1 }
+            'alt' : {
+              '1h' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+              'xx' : { 'alt' : -1 }
+            }
           }
         }
       },
       '4s' : { 
         'alt' : {
           '3s' : {
-            '1s' : { 'hcpdi' : 'between 15 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
-            'xx' : { 'alt' : -1 }
+            'alt' : {
+              '1s' : { 'hcpdi' : 'between 15 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+              'xx' : { 'alt' : -1 }
+            }
           },
           'xx' : {
-            '1s' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
-            'xx' : { 'alt' : -1 }
+            'alt' : {
+              '1s' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
+              'xx' : { 'alt' : -1 }
+            }
           }
         }
       },

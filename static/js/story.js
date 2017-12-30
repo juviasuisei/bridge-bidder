@@ -62,6 +62,7 @@ function tellStory() {
       $.each(story_library.opens, function(k,v) {
         if(k == loop_bid_key) {
           biddata = v;
+          return false;
         }
       });
     } else if(loop_bidder == responder && false == rebid) {
@@ -69,8 +70,9 @@ function tellStory() {
       if('1c' == openbid || '1d' == openbid) {
         $.each(story_library.responses.minor, function(k,v) {
           if(k == loop_bid_key) {
-            if(0 == v.alt) {
+            if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              return false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
@@ -87,8 +89,9 @@ function tellStory() {
       } else if('1h' == openbid || '1s' == openbid) {
         $.each(story_library.responses.major, function(k,v) {
           if(k == loop_bid_key) {
-            if(0 == v.alt) {
+            if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              return false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
@@ -105,8 +108,9 @@ function tellStory() {
       } else if('1n' == openbid || '2n' == openbid) {
         $.each(story_library.responses.nt, function(k,v) {
           if(k == loop_bid_key) {
-            if(0 == v.alt) {
+            if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              return false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
@@ -126,10 +130,10 @@ function tellStory() {
       if(openbid.substr(1) == respondbid.substr(1)) {
         $.each(story_library.orebids.raise, function(k,v) {
           if(k == loop_bid_key) {
-            if(0 == v.alt) {
+            if(0 == v.alt || -1 == v.alt) {
               biddata = v;
-            } else {
-              console.log(v);
+              return false;
+            } else if(-1 != v.alt) {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == respondbid || 'xx' == k2) {
                   if(0 == v2.alt) {

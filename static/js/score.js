@@ -11,8 +11,8 @@ sets = {
 
 function settleScore() {
   vuln = $('#vuln').hasClass('active');
-  dub = $('#double').hasClass('active');
-  redub = $('#redouble').hasClass('active');
+  dub = $('#double').prop('checked');
+  redub = $('#redouble').prop('checked');
   score_bid = bids[bid];
   score_rank = bid.substr(0,1);
   score_suit = bid.substr(1);

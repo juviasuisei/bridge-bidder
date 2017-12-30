@@ -106,7 +106,11 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   $(this).parent().children().removeClass('active');
   $(this).toggleClass('active');
   newbid = $(this).attr('id').substr(5);
-  bid = '0n' == newbid ? (undefined != bid ? bid : newbid) : newbid;
+  if(undefined == bid) {
+    bid = newbid;
+  } else if('0n' != newbid) {
+    bid = newbid;
+  }
   bidno = parseInt($(this).parent().attr('id').substr(6));
   $('#bid' + bidno + 'a').data('key', newbid);
   i = 50;

@@ -127,7 +127,7 @@ function tellStory() {
       }
     } else if(loop_bidder == opener && true == rebid) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Opener\'s Rebid</li>';
-      if(openbid.substr(1) == respondbid.substr(1) {
+      if(openbid.substr(1) == respondbid.substr(1)) {
         $.each(story_library.orebids.raise, function(k,v) {
           if(k == loop_bid_key) {
             if(0 == v.alt) {

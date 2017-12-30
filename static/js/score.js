@@ -23,18 +23,19 @@ function settleScore() {
   list += '<li><strong>Current Bid:</strong> <span class="' + score_bid.color + '">' + score_bid.name + '</span></li>';
   list += '<li><strong>Value Below the Line:</strong> ' + below + '</li>';
   list += '<li><strong>Value Per Overtrick:</strong> ' + above + '</li>';
-  list += '<li><strong>Penalty For 1 Undertrick:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][1] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 2 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][2] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 3 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][3] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 4 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][4] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 5 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][5] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 6 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][6] * (redub ? 2 : 1)) + '</li>';
-  list += '<li><strong>Penalty For 7 Undertricks:</strong> ' + (sets[(vuln ? 'safe' : 'vuln')][(dub ? 'dub' : 'reg')][7] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 1 Undertrick:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][1] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 2 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][2] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 3 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][3] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 4 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][4] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 5 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][5] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 6 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][6] * (redub ? 2 : 1)) + '</li>';
+  list += '<li><strong>Penalty For 7 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub ? 'dub' : 'reg')][7] * (redub ? 2 : 1)) + '</li>';
   $('#scoreexpl').empty().append(list);
 }
 
 $('body').on('click', '#score .vars', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
   $(this).toggleClass('active');
+  
   settleScore();
 });

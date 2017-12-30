@@ -77,8 +77,10 @@ function tellStory() {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
                   biddata = v2;
+                  return false;
                 } else if('xx' == k2) {
                   biddata = v2;
+                  return false;
                 }
               });
             } else {

@@ -108,7 +108,7 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
   newbid = $(this).attr('id').substr(5);
   bid = '0n' == newbid ? (undefined != bid ? bid : newbid) : newbid;
   bidno = parseInt($(this).parent().attr('id').substr(6));
-  $('#bid' + (bidno - 1) + 'a').data('key', newbid);
+  $('#bid' + bidno + 'a').data('key', newbid);
   i = 50;
   while(i > bidno) {
     $('#bidacc' + i).parent().remove();

@@ -37,4 +37,4 @@ $('body').on('click', '#story .vars', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
   $(this).toggleClass('active');
   settleScore();
-}
+});

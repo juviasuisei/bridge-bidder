@@ -129,6 +129,7 @@ function tellStory() {
             if(0 == v.alt) {
               biddata = v;
             } else {
+              console.log(v);
               $.each(v.alt, function(k2, v2) {
                 if(k2 == respondbid || 'xx' == k2) {
                   if(0 == v2.alt) {

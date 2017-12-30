@@ -41,10 +41,11 @@ function tellStory() {
       opener = loop_bidder;
       openbid = loop_bid_key;
       responder = getPartner(loop_bidder);
-    } else if(responder == loop_bidder) {
-      respondbid = loop_bid_key;
     } else if(opener == loop_bidder || overcaller == loop_bidder) {
       rebid = true;
+    }
+    if(responder == loop_bidder) {
+      respondbid = loop_bid_key;
     }
     panel = '';
     panel += '<div class="panel panel-default storybids">';

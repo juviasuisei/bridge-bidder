@@ -79,7 +79,7 @@ function tellStory() {
         }
       });
     } else if(loop_bidder == overcaller) {
-      panel += '<li class="list-group-item"><strong>Designation:</strong> Overcalling Bid</li>';
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Overcall Bid</li>';
       $.each(story_library.overcalls, function(k,v) {
         if(k == loop_bid_key) {
           biddata = v;
@@ -87,7 +87,7 @@ function tellStory() {
         }
       });
     } else if(loop_bidder == advancer) {
-      panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Advancing an Overcall Bid</li>';
       $.each(story_library.advances, function(k,v) {
         if(k == loop_bid_key) {
           if(0 == v.alt || -1 == v.alt) {

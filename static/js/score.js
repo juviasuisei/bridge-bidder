@@ -35,7 +35,6 @@ function settleScore() {
 
 $('body').on('click', '#score .vars', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
-  $(this).toggleClass('active');
-  
+  $(this).button('toggle')
   settleScore();
 });

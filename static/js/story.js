@@ -24,10 +24,10 @@ function tellStory() {
   responder = false;
   overcaller = false;
   advancer = false;
-  nbid = false;
-  ebid = false;
-  sbid = false;
-  wbid = false;
+  openbid = false;
+  respondbid = false;
+  orebid = false;
+  rrebid = false;
   while(bid_count > 0) {
     rebid = false;
     loop_bid = $('#bid' + i + 'a').text();
@@ -37,28 +37,17 @@ function tellStory() {
       winning_bid = loop_bid;
       winning_bid_key = $('#bid' + i + 'a').data('key');
     }
-    switch(loop_bidder) {
-      case 'N':
-        nbid = loop_bid;
-        break;
-      case 'E':
-        ebid = loop_bid;
-        break;
-      case 'S':
-        sbid = loop_bid;
-        break;
-      case 'W':
-        sbid = loop_bid;
-        break;
-    }
-    if((false == opener || false == overcaller) && '0n' != loop_bid) {
+    if((false == opener || false == overcaller) && '0n' != loop_bid_key) {
       if(false == opener) {
         opener = loop_bidder;
+        openbid = loop_bid_key;
         responder = getPartner(loop_bidder);
       } else if(false == overcaller) {
         overcaller = loop_bidder;
         advancer = getPartner(loop_bidder);
       }
+    } else if(responder == loop_bidder) {
+      respondbid = loop_bid_key;
     } else if(opener == loop_bidder || overcaller == loop_bidder) {
       rebid = true;
     }
@@ -79,8 +68,27 @@ function tellStory() {
           biddata = v;
         }
       });
+    } else if(loop_bidder == responder) && false == rebid) {
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
+      if('1c' == openbid || '1d' == openbid) {
+        $.each(story_library.responses.minor, function(k,v) {
+          if(k == loop_bid_key) {
+            if(-1 != v.alt) {
+              $.each(v.alt, function(k2, v2) {
+                if(k2 == openbid) {
+                  biddata = v2;
+                } else if('xx' == k2) {
+                  biddata = v2;
+                }
+              });
+            } else {
+              biddata = v;
+            }
+          }
+        });
+      }
     }
-    if(false != biddata && biddata.alt != -1) {
+    if(false != biddata && biddata.alt != -1 && biddata.type != -1) {
       panel += '<li class="list-group-item"><strong>Bid Type:</strong> ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
       panel += '<li class="list-group-item"><strong>Convention:</strong> ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
       panel += '<li class="list-group-item"><strong>HCP + Distribution Points:</strong> ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Unclear') + '</li>';

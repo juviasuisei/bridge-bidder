@@ -33,7 +33,7 @@ function settleScore() {
   $('#scoreexpl').empty().append(list);
 }
 
-$('body').on('click', '#story .vars', function(event) {
+$('body').on('click', '#score .vars', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
   $(this).toggleClass('active');
   settleScore();

@@ -81,15 +81,15 @@ function tellStory() {
       });
     }
     if(false != biddata && biddata.alt != -1) {
-      panel += '<li class="list-group-item">Bid Type: ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
-      panel += '<li class="list-group-item">HCP + Distribution Points: ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item">HCP + Dummy Points: ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item">Balanced Hand: ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item">&#x2660;: ' + (-1 != biddata.s ? (biddata.s + (-1 != biddata.sg ? ' Good' : '')) : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item"><span class="red">&#x2665;: ' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + '</span></li>';
-      panel += '<li class="list-group-item"><span class="red">&#x2666;: ' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + '</span></li>';
-      panel += '<li class="list-group-item">&#x2660;: ' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item">Designation: ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
+      panel += '<li class="list-group-item"><strong>Bid Type:</strong> ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
+      panel += '<li class="list-group-item"><strong>Convention:</strong> ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
+      panel += '<li class="list-group-item"><strong>HCP + Distribution Points:</strong> ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Unclear') + '</li>';
+      panel += '<li class="list-group-item"><strong>HCP + Dummy Points:</strong> ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Unclear') + '</li>';
+      panel += '<li class="list-group-item">' + (-1 != biddata.s ? (biddata.s + (-1 != biddata.sg ? ' Good' : '')) : 'Unclear') + ' &#x2660;</li>';
+      panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + ' &#x2665;</span></li>';
+      panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + ' &#x2666;</span></li>';
+      panel += '<li class="list-group-item">' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + ' &#x2660;</li>';
+      panel += '<li class="list-group-item"><strong>Balanced Hand:</strong> ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
     } else if(-1 == biddata.alt) {
       panel += '<li class="list-group-item">HERE BE DRAGONS.</li>'
     }

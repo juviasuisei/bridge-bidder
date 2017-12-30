@@ -15,6 +15,14 @@ function getPartner(x) {
   }
 }
 
+function findBidByName(n) {
+  $.each(bids, function(k,v) {
+    if(n == v.name) {
+      return(k);
+    }
+  });
+}
+
 function tellStory() {
   $('#storyacc').empty();
   bid_count = $('.bids').length - 1;
@@ -31,7 +39,7 @@ function tellStory() {
   while(bid_count > 0) {
     loop_bid = $('#bid' + i + 'a').text();
     loop_bidder = $('#bid' + i + 'b').text();
-    if(false == winning_bid || bids[loop_bid].rank > bids[winning_bid]) {
+    if(false == winning_bid || bids[findBidByName(loop_bid)].rank > bids[findBidByName(loop_bid)]) {
       winning_bid = loop_bid;
     }
     switch(loop_bidder) {
@@ -70,14 +78,5 @@ function tellStory() {
     $('#storyacc').prepend(panel);
     bid_count--;
     i++;
-    console.log(winning_bid);
-    console.log(opener);
-    console.log(responder);
-    console.log(overcaller);
-    console.log(advancer);
-    console.log(nbid);
-    console.log(ebid);
-    console.log(sbid);
-    console.log(wbid);
   }
 }

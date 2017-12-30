@@ -86,8 +86,8 @@ function tellStory() {
       panel += '<li class="list-group-item">HCP + Dummy Points: ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Unclear') + '</li>';
       panel += '<li class="list-group-item">Balanced Hand: ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
       panel += '<li class="list-group-item">&#x2660;: ' + (-1 != biddata.s ? (biddata.s + (-1 != biddata.sg ? ' Good' : '')) : 'Unclear') + '</li>';
-      panel += '<li class="list-group-item"><span class="red">&#x2665;: ' + (-1 != biddata.h ? (-1 != biddata.h + (biddata.hg ? ' Good' : '')) : 'Unclear') + '</span></li>';
-      panel += '<li class="list-group-item"><span class="red">&#x2666;: ' + (-1 != biddata.d ? (-1 != biddata.d + (biddata.dg ? ' Good' : '')) : 'Unclear') + '</span></li>';
+      panel += '<li class="list-group-item"><span class="red">&#x2665;: ' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + '</span></li>';
+      panel += '<li class="list-group-item"><span class="red">&#x2666;: ' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + '</span></li>';
       panel += '<li class="list-group-item">&#x2660;: ' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + '</li>';
       panel += '<li class="list-group-item">Designation: ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
     } else if(-1 == biddata.alt) {

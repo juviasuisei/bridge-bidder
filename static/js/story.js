@@ -68,7 +68,7 @@ function tellStory() {
           biddata = v;
         }
       });
-    } else if(loop_bidder == responder) && false == rebid) {
+    } else if(loop_bidder == responder && false == rebid) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
       if('1c' == openbid || '1d' == openbid) {
         $.each(story_library.responses.minor, function(k,v) {

@@ -96,7 +96,7 @@ function tellStory() {
       panel += '<li class="list-group-item">' + (-1 != biddata.s ? (biddata.s + (-1 != biddata.sg ? ' Good' : '')) : 'Unclear') + ' &#x2660;</li>';
       panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + ' &#x2665;</span></li>';
       panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + ' &#x2666;</span></li>';
-      panel += '<li class="list-group-item">' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + ' &#x2660;</li>';
+      panel += '<li class="list-group-item">' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + ' &#x2663;</li>';
       panel += '<li class="list-group-item"><strong>Balanced Hand:</strong> ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
     } else if(-1 == biddata.alt) {
       panel += '<li class="list-group-item">HERE BE DRAGONS.</li>'

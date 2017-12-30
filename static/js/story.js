@@ -26,8 +26,8 @@ function tellStory() {
   advancer = false;
   openbid = false;
   respondbid = false;
-  orebid = false;
-  rrebid = false;
+  overbid = false;
+  advbid = false;
   while(bid_count > 0) {
     rebid = false;
     loop_bid = $('#bid' + i + 'a').text();
@@ -41,11 +41,16 @@ function tellStory() {
       opener = loop_bidder;
       openbid = loop_bid_key;
       responder = getPartner(loop_bidder);
-    } else if(opener == loop_bidder || overcaller == loop_bidder) {
+    } else if(false == overcaller && '0n' != loop_bid_key) {
+      overcaller = loop_bidder;
+      overbid = loop_bid_key;
+      advancer = getPartner(loop_bidder);
+    } else if(opener == loop_bidder) {
       rebid = true;
-    }
-    if(responder == loop_bidder) {
+    } else if(responder == loop_bidder) {
       respondbid = loop_bid_key;
+    } else if(advancer == loop_bidder) {
+      advbid = loop_bid_key;
     }
     panel = '';
     panel += '<div class="panel panel-default storybids">';
@@ -57,7 +62,15 @@ function tellStory() {
     panel += '<div id="storyacc' + i + '" class="panel-collapse collapse" role="tabpanel" aria-labelledby="storyacc' + i + '">';
     panel += '<ul class="list-group">';
     biddata = false;
-    if(loop_bidder == opener && false == rebid) {
+    if(false == opener) {
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Non-Opening Bid</li>';
+      $.each(story_library.opens, function(k,v) {
+        if(k == loop_bid_key) {
+          biddata = v;
+          return false;
+        }
+      });
+    } else if(loop_bidder == opener && false == rebid) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Opening Bid</li>';
       $.each(story_library.opens, function(k,v) {
         if(k == loop_bid_key) {
@@ -65,7 +78,35 @@ function tellStory() {
           return false;
         }
       });
-    } else if(loop_bidder == responder && false == rebid) {
+    } else if(loop_bidder == overcaller) {
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Overcalling Bid</li>';
+      $.each(story_library.overcalls, function(k,v) {
+        if(k == loop_bid_key) {
+          biddata = v;
+          return false;
+        }
+      });
+    } else if(loop_bidder == advancer) {
+      panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
+      $.each(story_library.advances, function(k,v) {
+        if(k == loop_bid_key) {
+          if(0 == v.alt || -1 == v.alt) {
+            biddata = v;
+            return false;
+          } else {
+            $.each(v.alt, function(k2, v2) {
+              if(k2 == openbid) {
+                biddata = v2;
+                return false;
+              } else if('xx' == k2) {
+                biddata = v2;
+                return false;
+              }
+            });
+          }
+        }
+      });
+    } else if(loop_bidder == responder) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
       if('1c' == openbid || '1d' == openbid) {
         $.each(story_library.responses.minor, function(k,v) {
@@ -191,7 +232,7 @@ function tellStory() {
         });
       }
     }
-    if(false != biddata && biddata.alt != -1 && biddata.type != -1) {
+    if(false != biddata && biddata.alt != -1) {
       panel += '<li class="list-group-item"><strong>Bid Type:</strong> ' + (-1 != biddata.type ? (0 == biddata.type ? 'Invitational' : (1 == biddata.type ? 'Forcing' : 'Sign-Off')) : 'N/A') + '</li>';
       panel += '<li class="list-group-item"><strong>Convention:</strong> ' + (-1 != biddata.conv ? biddata.conv : 'N/A') + '</li>';
       panel += '<li class="list-group-item"><strong>HCP + Distribution Points:</strong> ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Unclear') + '</li>';
@@ -202,7 +243,7 @@ function tellStory() {
       panel += '<li class="list-group-item">' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + ' &#x2663;</li>';
       panel += '<li class="list-group-item"><strong>Balanced Hand:</strong> ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
     } else if(-1 == biddata.alt) {
-      panel += '<li class="list-group-item">HERE BE DRAGONS.</li>'
+      panel += '<li class="list-group-item">HERE BE DRAGONS</li>'
     }
     panel += '</ul>';
     panel += '</div>';

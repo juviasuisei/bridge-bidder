@@ -20,16 +20,18 @@ function settleScore() {
   below = ((score_rank * score_value) + ('n' == score_suit ? 10 : 0)) * (dub ? 2 : (redub ? 4 : 1));
   above = (dub ? (vuln ? 200 : 100) : (redub ? (vuln ? 400 : 200) : score_value));
   list = '';
-  list += '<li class="list-group-item"><strong>Current Bid:</strong> <span class="' + score_bid.color + '">' + score_bid.name + '</span></li>';
-  list += '<li class="list-group-item"><strong>Value Below the Line:</strong> ' + below + '</li>';
-  list += '<li class="list-group-item"><strong>Value Per Overtrick:</strong> ' + above + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 1 Undertrick:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][1] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 2 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][2] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 3 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][3] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 4 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][4] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 5 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][5] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 6 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][6] * (redub ? 2 : 1)) + '</li>';
-  list += '<li class="list-group-item"><strong>Penalty For 7 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][7] * (redub ? 2 : 1)) + '</li>';
+  if('0n' != bid) {
+    list += '<li class="list-group-item"><strong>Current Bid:</strong> <span class="' + score_bid.color + '">' + score_bid.name + '</span></li>';
+    list += '<li class="list-group-item"><strong>Value Below the Line:</strong> ' + below + '</li>';
+    list += '<li class="list-group-item"><strong>Value Per Overtrick:</strong> ' + above + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 1 Undertrick:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][1] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 2 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][2] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 3 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][3] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 4 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][4] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 5 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][5] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 6 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][6] * (redub ? 2 : 1)) + '</li>';
+    list += '<li class="list-group-item"><strong>Penalty For 7 Undertricks:</strong> ' + (sets[(vuln ? 'vuln' : 'safe')][(dub || redub ? 'dub' : 'reg')][7] * (redub ? 2 : 1)) + '</li>';
+  }
   $('#scoreexpl').empty().append(list);
 }
 

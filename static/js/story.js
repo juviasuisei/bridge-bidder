@@ -135,7 +135,7 @@ function tellStory() {
               return false;
             } else {
               $.each(v.alt, function(k2, v2) {
-                if(k2 == openbid) {
+                if(k2 == overbid) {
                   biddata = v2;
                   return false;
                 } else if('xx' == k2) {

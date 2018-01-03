@@ -113,6 +113,18 @@ $('body').on('click', '#bidacc .bids .bid', function(event) {
     bid = newbid;
   } else if('0n' == newbid && 1 == bidno) {
     bid = newbid;
+  } else if('0n' == newbid && $('#bid' + (bidno +1) + 'a')) {
+    i = bidno - 1;
+    while(i > 0) {
+      if('0n' != $('#bid' + i + 'a').data('key')) {
+        bid = $('#bid' + i + 'a').data('key');
+        break;
+      }
+      i--
+    }
+    if(0 == i) {
+        bid = $('#bid1a').data('key');
+    }
   }
   $('#bid' + bidno + 'a').data('key', newbid);
   i = 50;

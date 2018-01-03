@@ -41,14 +41,14 @@ function tellStory() {
       opener = loop_bidder;
       openbid = loop_bid_key;
       responder = getPartner(loop_bidder);
-    } else if(false == overcaller && '0n' != loop_bid_key) {
-      overcaller = loop_bidder;
-      overbid = loop_bid_key;
-      advancer = getPartner(loop_bidder);
     } else if(opener == loop_bidder) {
       rebid = true;
     } else if(responder == loop_bidder) {
       respondbid = loop_bid_key;
+    } else if(false == overcaller && '0n' != loop_bid_key) {
+      overcaller = loop_bidder;
+      overbid = loop_bid_key;
+      advancer = getPartner(loop_bidder);
     } else if(advancer == loop_bidder) {
       advbid = loop_bid_key;
     }

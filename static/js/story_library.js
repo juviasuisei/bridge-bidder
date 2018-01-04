@@ -980,7 +980,7 @@ var story_library = {
       },
       '1n' : { 
         'alt' : {
-          'xx' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
+          'xx' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
         }
       },
       '2c' : { 

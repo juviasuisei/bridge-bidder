@@ -207,7 +207,6 @@ function tellStory() {
                     return false;
                   } else {
                     $.each(v2.alt, function(k3, v3) {
-                      console.log(v2.alt, k, k2, k3, v3);
                       if(k3 == openbid) {
                         biddata = v3;
                         litmus = false;

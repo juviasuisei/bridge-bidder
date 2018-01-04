@@ -89,147 +89,181 @@ function tellStory() {
     } else if(loop_bidder == advancer) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Advancing an Overcall Bid</li>';
       $.each(story_library.advances, function(k,v) {
+        var litmus = true;
         if(k == loop_bid_key) {
           if(0 == v.alt || -1 == v.alt) {
             biddata = v;
-            return false;
+            litmus = false;
           } else {
             $.each(v.alt, function(k2, v2) {
               if(k2 == overbid) {
                 biddata = v2;
+                litmus = false;
                 return false;
               } else if('xx' == k2) {
                 biddata = v2;
+                litmus = false;
                 return false;
               }
             });
           }
         }
+        return litmus;
       });
     } else if(loop_bidder == responder) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Responder\'s Bid</li>';
       if('1c' == openbid || '1d' == openbid) {
         $.each(story_library.responses.minor, function(k,v) {
+          var litmus = true;
           if(k == loop_bid_key) {
             if(0 == v.alt || -1 == v.alt) {
               biddata = v;
-              return false;
+              litmus = false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 } else if('xx' == k2) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 }
               });
             }
           }
+          return litmus;
         });
       } else if('1h' == openbid || '1s' == openbid) {
         $.each(story_library.responses.major, function(k,v) {
+          var litmus = true;
           if(k == loop_bid_key) {
             if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              litmus = false;
               return false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 } else if('xx' == k2) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 }
               });
             }
           }
+          return litmus;
         });
       } else if('1n' == openbid || '2n' == openbid) {
         $.each(story_library.responses.nt, function(k,v) {
+          var litmus = true;
           if(k == loop_bid_key) {
             if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              litmus = false;
               return false;
             } else {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == openbid) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 } else if('xx' == k2) {
                   biddata = v2;
+                  litmus = false;
                   return false;
                 }
               });
             }
           }
+          return litmus;
         });
       }
     } else if(loop_bidder == opener && true == rebid) {
       panel += '<li class="list-group-item"><strong>Designation:</strong> Opener\'s Rebid</li>';
       if(openbid.substr(1) == respondbid.substr(1)) {
         $.each(story_library.orebids.raise, function(k,v) {
+          var litmus = true;
           if(k == loop_bid_key) {
             if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              litmus = false;
               return false;
             } else if(-1 != v.alt) {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == respondbid || 'xx' == k2) {
                   if(0 == v2.alt) {
                     biddata = v2;
+                    litmus = false;
                     return false;
                   } else if(-1 == v2.alt) {
                     biddata = v2;
+                    litmus = false;
                     return false;
                   } else {
                     $.each(v2.alt, function(k3, v3) {
                       console.log(v2.alt, k, k2, k3, v3);
                       if(k3 == openbid) {
                         biddata = v3;
+                        litmus = false;
                         return false;
                       } else if('xx' == k3) {
                         biddata = v3;
+                        litmus = false;
                         return false;
                       }
                     });
                   }
                 }
+                return litmus;
               });
             }
           }
+          return litmus;
         });
       } else {
         $.each(story_library.orebids.new, function(k,v) {
+          var litmus = true;
           if(k == loop_bid_key) {
             if(0 == v.alt || -1 == v.alt) {
               biddata = v;
+              litmus = false;
               return false;
             } else if(-1 != v.alt) {
               $.each(v.alt, function(k2, v2) {
                 if(k2 == respondbid || 'xx' == k2) {
                   if(0 == v2.alt) {
                     biddata = v2;
+                    litmus = false;
                     return false;
                   } else if(-1 == v2.alt) {
                     biddata = v2;
+                    litmus = false;
                     return false;
                   } else {
                     $.each(v2.alt, function(k3, v3) {
                       if(k3 == openbid) {
                         biddata = v3;
+                        litmus = false;
                         return false;
                       } else if('xx' == k3) {
                         biddata = v3;
+                        litmus = false;
                         return false;
                       }
                     });
                   }
                 }
+                return litmus;
               });
             }
           }
+          return litmus;
         });
       }
     }

@@ -52,14 +52,14 @@ function tellStory() {
     } else if(advancer == loop_bidder) {
       advbid = loop_bid_key;
     }
+
     panel = '';
-    panel += '<div class="panel panel-default storybids">';
-    panel += '<div class="panel-heading" role="tab" id="storyacc' + i + 'h">';
-    panel += '<p class="panel-title">';
-    panel += '<a role="button" data-toggle="collapse" data-parent="#storyacc" href="#storyacc' + i + '" aria-expanded="false" aria-controls="storyacc' + i + '">Bid ' + i + ' (' + loop_bidder + '): <span class="' + ($('#bid' + i + 'a').hasClass('black') ? 'black' : 'red') + '">' + loop_bid + '</span></a>';
-    panel += '</p>';
+    panel += '<div class="card storybids mt-1">';
+    panel += '<div class="card-header bg-secondary" id="storyacc' + i + 'h">';
+    panel += '<button class="btn btn-light" data-toggle="collapse" data-target="#storyacc' + i + '" aria-expanded="true" aria-controls="storyacc' + i + '">Bid ' + i + ' (' + loop_bidder + '): <span class="' + ($('#bid' + i + 'a').hasClass('text-dark') ? 'text-dark' : 'text-danger') + '">' + loop_bid + '</span></button>';
     panel += '</div>';
-    panel += '<div id="storyacc' + i + '" class="panel-collapse collapse" role="tabpanel" aria-labelledby="storyacc' + i + '">';
+    panel += '<div id="storyacc' + i + '" class="collapse" aria-labelledby="storyacc' + i + 'h" data-parent="#storyacc' + i + '">';
+    panel += '<div class="card-body">';
     panel += '<ul class="list-group">';
     biddata = false;
     if(false == opener) {
@@ -272,14 +272,15 @@ function tellStory() {
       panel += '<li class="list-group-item"><strong>HCP + Distribution Points:</strong> ' + (-1 != biddata.hcpdi ? biddata.hcpdi : 'Unclear') + '</li>';
       panel += '<li class="list-group-item"><strong>HCP + Dummy Points:</strong> ' + (-1 != biddata.hcpdu ? biddata.hcpdu : 'Unclear') + '</li>';
       panel += '<li class="list-group-item">' + (-1 != biddata.s ? (biddata.s + (-1 != biddata.sg ? ' Good' : '')) : 'Unclear') + ' &#x2660;</li>';
-      panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + ' &#x2665;</span></li>';
-      panel += '<li class="list-group-item"><span class="red">' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + ' &#x2666;</span></li>';
+      panel += '<li class="list-group-item"><span class="text-danger">' + (-1 != biddata.h ? ( biddata.h + (-1 !=biddata.hg ? ' Good' : '')) : 'Unclear') + ' &#x2665;</span></li>';
+      panel += '<li class="list-group-item"><span class="text-danger">' + (-1 != biddata.d ? (biddata.d + (-1 !=biddata.dg ? ' Good' : '')) : 'Unclear') + ' &#x2666;</span></li>';
       panel += '<li class="list-group-item">' + (-1 != biddata.c ? (biddata.c + (-1 != biddata.cg ? ' Good' : '')) : 'Unclear') + ' &#x2663;</li>';
       panel += '<li class="list-group-item"><strong>Balanced Hand:</strong> ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
     } else if(-1 == biddata.alt) {
       panel += '<li class="list-group-item">HERE BE DRAGONS</li>'
     }
     panel += '</ul>';
+    panel += '</div>';
     panel += '</div>';
     panel += '</div>';
     $('#storyacc').prepend(panel);

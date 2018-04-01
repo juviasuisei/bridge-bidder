@@ -1,6 +1,6 @@
-$('body').on('click', '.card', function(event) {
+$('body').on('click', '.plcard', function(event) {
   event.stopPropagation(); // prevent default bootstrap behavior
-  if(13 > $('.card.active').length || true == $(this).hasClass('active')) {
+  if(13 > $('.plcard.active').length || true == $(this).hasClass('active')) {
       $(this).toggleClass('active');
   }
   hcp = 0;
@@ -11,7 +11,7 @@ $('body').on('click', '.card', function(event) {
   c = 0;
   d = 0;
   bal = true;
-  $('.card').each(function(k,v) {
+  $('.plcard').each(function(k,v) {
     if($(v).hasClass('active')) {
       rank = v.id.substring(0,1);
       suit = v.id.substring(1);

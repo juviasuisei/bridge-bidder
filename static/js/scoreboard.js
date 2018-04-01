@@ -8,7 +8,7 @@ function buildScoreBoard(s,id) { // A LOT COULD BE MADE BETTER HERE; LOTS OF OVE
   });
   var w = 100/(p.length + 1); // equal width of columns
   var t = ''; // table string to be inserted
-  t += '<table id="' + id + '" class="table table-sm table-bordered mt-5">'; // need a unique ID for each table
+  t += '<table id="' + id + '" class="table table-sm table-bordered mt-5 text-center">'; // need a unique ID for each table
   t += '<thead><tr>'; // header row
   t += '<th style="width:' + w + '%;">' + s[0].key + '</th>'; // first column uses the season key item
   $.each(p, function(k,v) { // create th for every player

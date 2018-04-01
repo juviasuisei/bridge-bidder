@@ -1,5 +1,5 @@
 .fixed-bottom { background: white;}
-.plcard, .bid { width: 50px; }
+.plcard, .bid { width: 60px; }
 .text-danger .active, .text-danger.active { background: pink; }
 .text-dark .active, .text-dark.active, #score .active { background: lightgrey; }
 

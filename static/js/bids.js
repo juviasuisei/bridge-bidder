@@ -89,7 +89,7 @@ $('body').on('click', '#bidacc0 .bid', function(event) {
   panel += '<div id="bidacc1" class="collapse show" aria-labelledby="bidacc1h" data-parent="#bidacc1">';
   panel += '<div class="card-body">';
   $.each(bids, function(k,v) {
-    panel += '<button id="bid01' + k + '" type="button" class="bid btn btn-muted ' + v.color + ' mb-1" data-toggle="button" aria-pressed="false" autocomplete="off">' + v.name + '</button>';
+    panel += '<button id="bid01' + k + '" type="button" class="bid btn btn-muted ' + v.color + ' mb-1" data-toggle="button" aria-pressed="false" autocomplete="off">' + ('P' == v.name ? 'Andrew' : v.name) + '</button>';
     if(k.substr(1) == 'n') {
       panel += '<br />';
     }

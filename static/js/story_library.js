@@ -1,6 +1,6 @@
 var story_library = {
   'opens' : {
-    '0n' : { 'hcpdi' : '< 13', 'hcpdu' : -1, 'bal' : -1, 's' : '< 6', 'sg' : -1, 'h' : '< 6', 'hg' : -1, 'd' : '< 6', 'dg' : -1, 'c' : '< 6', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
+    '0n' : { 'hcpdi' : '< 13', 'hcpdu' : -1, 'bal' : -1, 's' : '< 6', 'sg' : -1, 'h' : '< 6', 'hg' : -1, 'd' : '< 6', 'dg' : -1, 'c' : '< 6', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'The Andrew' },
     '1c' : { 'hcpdi' : 'between 13 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : '3+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
     '1d' : { 'hcpdi' : 'between 13 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '3+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
     '1h' : { 'hcpdi' : 'between 13 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
@@ -45,7 +45,7 @@ var story_library = {
       '1h' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '4+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
       '1s' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '4+', 'sg' : -1, 'h' : '< 4', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
       '1n' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : '< 4', 'sg' : -1, 'h' : '< 4', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
-      '2c' : { 
+      '2c' : {
         'alt' : {
           '1c' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 4', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           '1d' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
@@ -62,7 +62,7 @@ var story_library = {
       '2h' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
       '2s' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
       '2n' : { 'hcpdi' : 'between 11 &#x0026; 12', 'hcpdu' : -1, 'bal' : 1, 's' : '< 4', 'sg' : -1, 'h' : '< 4', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
-      '3c' : { 
+      '3c' : {
         'alt' : {
           '1c' : { 'hcpdi' : 'between 11 &#x0026; 12', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 4', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
           '1d' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
@@ -104,41 +104,41 @@ var story_library = {
       '1c' : { 'alt' : -1 },
       '1d' : { 'alt' : -1 },
       '1h' : { 'alt' : -1 },
-      '1s' : { 
+      '1s' : {
         'alt' : {
           '1h' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '4+', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '1n' : { 
+      '1n' : {
         'alt' : {
           '1h' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           '1s' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2c' : { 
+      '2c' : {
         'alt' : {
           '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '4+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '4+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2d' : { 
+      '2d' : {
         'alt' : {
           '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : '4+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '4+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2h' : { 
+      '2h' : {
         'alt' : {
           '1h' : { 'hcpdi' : -1, 'hcpdu' : 'between 6 &#x0026; 12', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '3+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2s' : { 
+      '2s' : {
         'alt' : {
           '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           '1s' : { 'hcpdi' : -1, 'hcpdu' : 'between 6 &#x0026; 12', 'bal' : -1, 's' : '3+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
@@ -146,28 +146,28 @@ var story_library = {
         }
       },
       '2n' : { 'hcpdi' : 'between 11 &#x0026; 12', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
-      '3c' : { 
+      '3c' : {
         'alt' : {
           '1h' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           '1s' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3d' : { 
+      '3d' : {
         'alt' : {
           '1h' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 4', 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           '1s' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3h' : { 
+      '3h' : {
         'alt' : {
           '1h' : { 'hcpdi' : -1, 'hcpdu' : 'between 11 &#x0026; 12', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '4+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
           '1s' : { 'hcpdi' : '17+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3s' : { 
+      '3s' : {
         'alt' : {
           '1s' : { 'hcpdi' : -1, 'hcpdu' : 'between 11 &#x0026; 12', 'bal' : -1, 's' : '4+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
@@ -208,71 +208,71 @@ var story_library = {
       '1h' : { 'alt' : -1 },
       '1s' : { 'alt' : -1 },
       '1n' : { 'alt' : -1 },
-      '2c' : { 
+      '2c' : {
         'alt' : {
           '1n' : { 'hcpdi' : '8+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Stayman' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2d' : { 
+      '2d' : {
         'alt' : {
           '1n' : { 'hcpdi' : -1, 'hcpdu' : '< 8', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jacoby Transfer' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2h' : { 
+      '2h' : {
         'alt' : {
           '1n' : { 'hcpdi' : -1, 'hcpdu' : '< 8', 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jacoby Transfer' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2s' : { 
+      '2s' : {
         'alt' : {
           '1n' : { 'hcpdi' : -1, 'hcpdu' : '< 8', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jacoby Transfer' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '2n' : { 
+      '2n' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 8 &#x0026; 9', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3c' : { 
+      '3c' : {
         'alt' : {
           '1n' : { 'hcpdi' : '8+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '6+', 'cg' : 1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
           '2n' : { 'hcpdi' : '4+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Stayman' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3d' : { 
+      '3d' : {
         'alt' : {
           '1n' : { 'hcpdi' : '8+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '6+', 'dg' : 1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
           '2n' : { 'hcpdi' : -1, 'hcpdu' : '< 4', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jacoby Transfer' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3h' : { 
+      '3h' : {
         'alt' : {
           '1n' : { 'hcpdi' : '16+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           '2n' : { 'hcpdi' : -1, 'hcpdu' : '< 4', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jacoby Transfer' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3s' : { 
+      '3s' : {
         'alt' : {
           '1n' : { 'hcpdi' : '16+', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 1, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3n' : { 
+      '3n' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 10 &#x0026; 15', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2n' : { 'hcpdi' : 'between 4 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4c' : { 
+      '4c' : {
         'alt' : {
           '1n' : { 'hcpdi' : '18+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : 1, 'alt' : 0, 'type' : 1, 'conv' : 'Gerber' },
           '2n' : { 'hcpdi' : '13+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : 1, 'alt' : 0, 'type' : 1, 'conv' : 'Gerber' },
@@ -280,21 +280,21 @@ var story_library = {
         }
       },
       '4d' : { 'alt' : -1 },
-      '4h' : { 
+      '4h' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 10 &#x0026; 15', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Shift' },
           '2n' : { 'hcpdi' : 'between 4 &#x0026; 10', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4s' : { 
+      '4s' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 10 &#x0026; 15', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Shift' },
           '2n' : { 'hcpdi' : 'between 4 &#x0026; 10', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Shift' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4n' : { 
+      '4n' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 16 &#x0026; 17', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
           '2n' : { 'hcpdi' : 'between 11 &#x0026; 12', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
@@ -310,7 +310,7 @@ var story_library = {
       '6d' : { 'alt' : -1 },
       '6h' : { 'alt' : -1 },
       '6s' : { 'alt' : -1 },
-      '6n' : { 
+      '6n' : {
         'alt' : {
           '1n' : { 'hcpdi' : '18+', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2n' : { 'hcpdi' : '13+', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
@@ -326,9 +326,9 @@ var story_library = {
   },
   'orebids' : {
     'raise' : {
-      '0n' : { 
+      '0n' : {
         'alt' : {
-          'xx' : { 
+          'xx' : {
             'alt' : {
               '1c' : { 'hcpdi' : 'between 13 &#x0026; 17', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : '3+', 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
               '1d' : { 'hcpdi' : 'between 13 &#x0026; 17', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '3+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
@@ -348,9 +348,9 @@ var story_library = {
       '2c' : { 'alt' : -1 },
       '2d' : { 'alt' : -1 },
       '2h' : { 'alt' : -1 },
-      '2s' : { 
+      '2s' : {
         'alt' : {
-          '2h' : { 
+          '2h' : {
             'alt' : {
               '1h' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Shift' },
               'xx' : { 'alt' : -1 }
@@ -359,7 +359,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '2n' : { 
+      '2n' : {
         'alt' : {
           'xx' : {
             'alt' : {
@@ -372,15 +372,15 @@ var story_library = {
           }
         }
       },
-      '3c' : { 
+      '3c' : {
         'alt' : {
-          '2h' : { 
+          '2h' : {
             'alt' : {
               '1h' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Shift' },
               'xx' : { 'alt' : -1 }
             }
           },
-          '2s' : { 
+          '2s' : {
             'alt' : {
               '1s' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Shift' },
               'xx' : { 'alt' : -1 }
@@ -389,15 +389,15 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '3d' : { 
+      '3d' : {
         'alt' : {
-          '2h' : { 
+          '2h' : {
             'alt' : {
               '1h' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Shift' },
               'xx' : { 'alt' : -1 }
             }
           },
-          '2s' : { 
+          '2s' : {
             'alt' : {
               '1s' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Shift' },
               'xx' : { 'alt' : -1 }
@@ -406,9 +406,9 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '3h' : { 
+      '3h' : {
         'alt' : {
-          '2s' : { 
+          '2s' : {
             'alt' : {
               '1s' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 1, 'type' : 1, 'conv' : 'Jump Shift' },
               'xx' : { 'alt' : -1 }
@@ -421,7 +421,7 @@ var story_library = {
       '3n' : { 'alt' : -1 },
       '4c' : { 'alt' : -1 },
       '4d' : { 'alt' : -1 },
-      '4h' : { 
+      '4h' : {
         'alt' : {
           '3h' : {
             'alt' : {
@@ -437,7 +437,7 @@ var story_library = {
           }
         }
       },
-      '4s' : { 
+      '4s' : {
         'alt' : {
           '3s' : {
             'alt' : {
@@ -454,7 +454,7 @@ var story_library = {
         }
       },
       '4n' : { 'alt' : -1 },
-      '5c' : { 
+      '5c' : {
         'alt' : {
           '3c' : {
             'alt' : {
@@ -465,7 +465,7 @@ var story_library = {
           }
         }
       },
-      '5d' : { 
+      '5d' : {
         'alt' : {
           '3d' : {
             'alt' : {
@@ -491,7 +491,7 @@ var story_library = {
       '7n' : { 'alt' : -1 }
     },
     'new' : {
-      '0n' : { 
+      '0n' : {
         'alt' : {
           '1n' : {
             'alt' : {
@@ -543,7 +543,7 @@ var story_library = {
           }
         }
       },
-      '2d' : { 
+      '2d' : {
         'alt' : {
           '1d' : { 'alt' : -1 },
           '2c' : {
@@ -563,7 +563,7 @@ var story_library = {
           }
         }
       },
-      '2h' : { 
+      '2h' : {
         'alt' : {
           '1h' : {
             'alt' : {
@@ -584,7 +584,7 @@ var story_library = {
           }
         }
       },
-      '2s' : { 
+      '2s' : {
         'alt' : {
           '1s' : {
             'alt' : {
@@ -663,7 +663,7 @@ var story_library = {
           }
         }
       },
-      '3h' : { 
+      '3h' : {
         'alt' : {
           '1h' : {
             'alt' : {
@@ -680,7 +680,7 @@ var story_library = {
               'xx' : { 'alt' : -1 }
             }
           },
-          'xx' : { 
+          'xx' : {
             'alt' : {
               '1h' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '6+', 'hg' : 1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
               '1s' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : 1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Shift' },
@@ -689,7 +689,7 @@ var story_library = {
           },
         }
       },
-      '3s' : { 
+      '3s' : {
         'alt' : {
           '1s' : {
             'alt' : {
@@ -707,7 +707,7 @@ var story_library = {
               'xx' : { 'alt' : -1 }
             }
           },
-          'xx' : { 
+          'xx' : {
             'alt' : {
               '1s' : { 'hcpdi' : 'between 17 &#x0026; 18', 'hcpdu' : -1, 'bal' : 0, 's' : '6+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Rebid' },
               'xx' : { 'alt' : -1 }
@@ -715,7 +715,7 @@ var story_library = {
           },
         }
       },
-      '3n' : { 
+      '3n' : {
         'alt' : {
           '1n' : {
             'alt' : {
@@ -738,7 +738,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '4c' : { 
+      '4c' : {
         'alt' : {
           '2c' : {
             'alt' : {
@@ -768,7 +768,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '4d' : { 
+      '4d' : {
         'alt' : {
           '2d': {
             'alt' : {
@@ -787,7 +787,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '4h' : { 
+      '4h' : {
         'alt' : {
           '1h' : {
             'alt' : {
@@ -818,7 +818,7 @@ var story_library = {
           }
         }
       },
-      '4s' : { 
+      '4s' : {
         'alt' : {
           '1s' : {
             'alt' : {
@@ -891,7 +891,7 @@ var story_library = {
               'xx' : { 'alt' : -1 }
             }
           },
-          'xx' : { 
+          'xx' : {
             'alt' : {
               '1d' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : 0, 's' : '< 5', 'sg' : -1, 'h' : '< 5', 'hg' : -1, 'd' : '7+', 'dg' : 1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Rebid' },
               '1h' : { 'hcpdi' : 'between 19 &#x0026; 21', 'hcpdu' : -1, 'bal' : -1, 's' : '< 5', 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Jump Raise' },
@@ -955,7 +955,7 @@ var story_library = {
       '7n' : { 'alt' : -1 }
   },
   'advances' : {
-      '0n' : { 
+      '0n' : {
         'alt' : {
           '1d' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '=< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           '1h' : { 'hcpdi' : '< 6', 'hcpdu' : '< 6', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '=< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
@@ -965,25 +965,25 @@ var story_library = {
       },
       '1c' : { 'alt' : -1 },
       '1d' : { 'alt' : -1 },
-      '1h' : { 
+      '1h' : {
         'alt' : {
           '1d' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : 1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '1s' : { 
+      '1s' : {
         'alt' : {
           '1d' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : 1, 'h' : -1, 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           '1h' : { 'hcpdi' : '6+', 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : 1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '1n' : { 
+      '1n' : {
         'alt' : {
           'xx' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
         }
       },
-      '2c' : { 
+      '2c' : {
         'alt' : {
           '1d' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '< 3', 'dg' : -1, 'c' : '6+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
           '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '6+', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
@@ -991,7 +991,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '2d' : { 
+      '2d' : {
         'alt' : {
           '1d' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 3, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           '1h' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '< 3', 'hg' : -1, 'd' : '6+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
@@ -999,7 +999,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '2h' : { 
+      '2h' : {
         'alt' : {
           '1h' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 3, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           '1s' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '< 3', 'sg' : -1, 'h' : '6+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
@@ -1008,7 +1008,7 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '2s' : { 
+      '2s' : {
         'alt' : {
           '1s' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : 3, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           '2c' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : -1, 's' : '6+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '< 3', 'cg' : -1, 'alt' : 0, 'type' : 0, 'conv' : 'Shift' },
@@ -1017,65 +1017,65 @@ var story_library = {
           'xx' : { 'alt' : -1 }
         }
       },
-      '2n' : { 
+      '2n' : {
         'alt' : {
           '1n' : { 'hcpdi' : 'between 6 &#x0026; 10', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3c' : { 
+      '3c' : {
         'alt' : {
           '2c' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3d' : { 
+      '3d' : {
         'alt' : {
           '1d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2d' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 3, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3h' : { 
+      '3h' : {
         'alt' : {
           '1h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 4, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2h' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 3, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3s' : { 
+      '3s' : {
         'alt' : {
           '1s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : 4, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2s' : { 'hcpdi' : -1, 'hcpdu' : '6+', 'bal' : -1, 's' : 3, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : -1 },
           'xx' : { 'alt' : -1 }
         }
       },
-      '3n' : { 
+      '3n' : {
         'alt' : {
           '1n' : { 'hcpdi' : '11+', 'hcpdu' : -1, 'bal' : 1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 3, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4c' : { 
+      '4c' : {
         'alt' : {
           '2c' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : 4, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4d' : { 
+      '4d' : {
         'alt' : {
           '2d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : 4, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4h' : { 
+      '4h' : {
         'alt' : {
           '1h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : '5+', 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2h' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : 4, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '4s' : { 
+      '4s' : {
         'alt' : {
           '1s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : '5+', 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2s' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : 4, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
@@ -1083,13 +1083,13 @@ var story_library = {
         }
       },
       '4n' : { 'alt' : -1 },
-      '5c' : { 
+      '5c' : {
         'alt' : {
           '2c' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : -1, 'dg' : -1, 'c' : '5+', 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           'xx' : { 'alt' : -1 }
         }
       },
-      '5d' : { 
+      '5d' : {
         'alt' : {
           '1d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },
           '2d' : { 'hcpdi' : -1, 'hcpdu' : -1, 'bal' : -1, 's' : -1, 'sg' : -1, 'h' : -1, 'hg' : -1, 'd' : '5+', 'dg' : -1, 'c' : -1, 'cg' : -1, 'alt' : 0, 'type' : 2, 'conv' : 'Jump Raise' },

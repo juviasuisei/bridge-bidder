@@ -45,7 +45,7 @@ function buildScoreBoard(s,id) { // A LOT COULD BE MADE BETTER HERE; LOTS OF OVE
   var low = 0; // initialize a couple litmuses to help identify top and worst running scores
   var high = 0;
   $.each(p, function(k,v) { // loop through all players looking for best and worst scores
-    t += '<td id="' + id + 'total' + v + '">' + pd[v] + '</td>';
+    t += '<td id="' + id + 'total' + v + '">' + (0 == pd[v] % 1 ? pd[v] : pd[v].toFixed(1)) + '</td>';
     if(pd[v] > high) { // better than the current high litmus
       high = pd[v];
     } else if(pd[v] < low) { // worse than the current low litmus

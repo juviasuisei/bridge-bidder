@@ -278,6 +278,8 @@ function tellStory() {
       panel += '<li class="list-group-item"><strong>Balanced Hand:</strong> ' + (-1 != biddata.bal ? (biddata.bal ? 'Yes' : 'No') : 'Unclear') + '</li>';
     } else if(-1 == biddata.alt) {
       panel += '<li class="list-group-item">HERE BE DRAGONS</li>'
+    } else if(false == biddata) {
+      panel += '<li class="list-group-item">W.W.A.D.</li>'
     }
     panel += '</ul>';
     panel += '</div>';

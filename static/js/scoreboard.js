@@ -66,5 +66,6 @@ function buildScoreBoard(s,id) { // A LOT COULD BE MADE BETTER HERE; LOTS OF OVE
   })
 }
 
+buildScoreBoard(s3, 's3'); // generate score for S3
 buildScoreBoard(s2, 's2'); // generate score for S2
 buildScoreBoard(s1, 's1'); // generate score for S1
